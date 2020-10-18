@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport"    
+  content="width=device-width">
+ 
+ <title>Szyfr Cezara</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <form>       
+   <h1>Szyfr Cezara</h1>   
+   <p id="titleId">Wprowadź tekst</p>
+  
+   <div>          
+    <textarea name="sourceText" spellcheck="false" placeholder="Wpisz tekst lub szyfr..." style="font-size: 20px;"></textarea>
+                            
+   </div>
+  
+   <div>      
+    <label for="shift">Zmiana co:</label>
+    <select id="shift" name="shift">
+     <option value="1">1</option>
+     <option value="2">2</option>
+     <option value="5">5</option>
+    </select> 
+  </div>
+   
+  <div>      
+    <input type="button" id="decrypt" 
+       value="Zaszyfruj" 
+       onclick="encryptText();">
+    <input type="button" id="decrypt" 
+       value="Odszyfruj" 
+       onclick="decryptText();">    
+  </div>
+  
+  </form>
+  <script src="main.js"></script>
+</body>
+</html>
